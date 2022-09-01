@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+         Dailyfit
+    </title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body {
+        background-image: url(lady3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .nav img {
+        position :absolute;
+        left: 10px;
+       /* top: 10px;*/
+        width: 34px ;
+        height: 34px;
+       /* background-color: white;*/
+    }
+    .ul {
+        list-style-type: none;
+        margin: auto;
+        width: 40%;
+    }
+    li { display: inline;
+    }
+    li a{text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    padding: 2px 12px ;}
+
+    li a:hover{
+        background-color: rgb(86, 83, 79);
+        border-radius: 2px;
+        color: bisque;
+    }
+
+    .dform{ margin: 300px 80px ;
+                /* border: 3px solid rgb(237, 155, 55); */
+            position: fixed;
+                             }
+    .dform input {
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: block;
+        border : 4px solid black;
+    }
+    .dform label {
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: block;
+        padding:4px 3px;
+        margin-left: 4px;
+    }
+
+    .chat{
+        border: 2px  white;
+        border-radius: 20px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.549);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        padding: 3px 5px;
+    }
+    header {
+        position: sticky;
+        top: 0px;
+    }
+    #login {
+        position: absolute;
+        right: 30px;
+    }
+    #login :hover
+    {
+        border-radius: 2px;
+    }
+    .dform a{
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 5px;
+        border-radius: 5px;
+        border: 3px solid grey;
+        background-color: whitesmoke;
+        padding: 0px;
+    }
+    .dform a:hover{
+        border: 3px solid black;
+        background-color: rgba(249, 249, 243, 0.795);
+        border: 5px;
+        
+    }
+   
+   
+</style>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Seniors </a> </li>
+                <li><a href="#">Youngers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><img src="logo.png" alt="logo"></li>
+                <li id="login"><a href="#">Login</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div class="dform">
+        <label for="fullname">Name</label>
+        <input type="text" id="fullname" name="name" placeholder="Full name">
+        <label for="Ag">Age</label>
+        <input type="text" id="Ag" name="age"  placeholder="Enter Age">
+        <label for="wt">Weight</label>
+        <input type="text" id="wt" name="weight"  placeholder="Enter Weight">
+        <label for="submit"></label>
+        <a href="#">Submit</a>
+    </div>
+
+    <div class="chat" >
+       <p style="padding:3px 3px">Need help</p>
+    </div>
+    
+</body>
+</html>
